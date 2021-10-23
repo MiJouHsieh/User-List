@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+}
+
+.user-portraits,
+.fav-user-portraits {
+  border-radius: 50%;
+}
+
+.user-portraits:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.fav-user-portraits:hover {
+  opacity: 0.7;
+}
+
+.btn {
+  border: transparent;
+}
+
+.fas {
+  padding: 20px;
+}
+.fa-heart,
+.fa-heart-broken {
+  color: #ff7899;
+  font-size: 30px;
+}
+
+.fa-heart:active {
+  color: #ff1d4f;
+}
+
+.fa-heart-broken:hover {
+  color: #cfd0d2;
+}
+
+.page-link {
+  color: #ba9bd8;
+}
